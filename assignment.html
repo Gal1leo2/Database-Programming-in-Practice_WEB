@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignments" />
+    <title>Assignments | Database Programming in Practice</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1d98392fe1.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+          font-family: "Noto Sans", sans-serif;
+        }
+      </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-gray-700 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar fixed top-0 z-50 w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 shadow-lg" >
+          <div class="container mx-auto flex items-center justify-between px-6 py-3">
+            <!-- Logo or Brand -->
+            <a href="/index.html" class="text-xl font-bold text-white tracking-wide hover:text-red-500 transition duration-300">
+                05696110
+              </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="block md:hidden p-2 text-white hover:text-red-500 transition duration-300">
+              <i class="fas fa-bars"></i>
+            </button>
+      
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+              <a href="/assignment.html" class="text-gray-200 hover:text-red-500 transition duration-300">Assignments</a>
+              <a href="/schedule.html" class="text-gray-200 hover:text-red-500 transition duration-300">Schedule</a>
+              <a href="/courselogistics.html" class="text-gray-200 hover:text-red-500 transition duration-300">Syllabus & Course Logistics</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow mt-20 px-4 py-8 bg-white text-gray-900 rounded-lg shadow-lg container mx-auto">
+        <h1 class="text-4xl font-bold mb-6 flex items-center"><i class="fas fa-tasks mr-3"></i> Assignments</h1>
+        <p class="text-gray-600 text-sm mb-8">Last Updated: <time datetime="2024-10-28">Nov 25, 2024</time></p>
+
+        <!-- Announcement Section -->
+        <div class="bg-red-600 text-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-xl font-bold">📢 Announcement</h2>
+            <p class="mt-2 font-bold">
+                Please note that all of the assignments will be posted on <u><a href ="https://classroom.google.com/c/NzI5NTc3MjQwMjY0?cjc=fqinlng">Google Classroom.</a></u>
+                Make sure to check the platform regularly for updates, instructions, and submission deadlines. If you have any questions, feel free to reach out!
+            </p>
+        </div>
+
+        <!-- Final Grade Breakdown Section -->
+        <!-- <div class="bg-blue-600 text-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-xl font-bold">📊 Final Grade Breakdown</h2>
+            <ul class="mt-4 space-y-2">
+                <li>SQL Exam: <span class="font-semibold">10%</span></li>
+                <li>Project: <span class="font-semibold">15%</span></li>
+                <li>Midterm Exam: <span class="font-semibold">15%</span></li>
+                <li>Final Exam: <span class="font-semibold">15%</span></li>
+                <li>Homework: <span class="font-semibold">20%</span></li>
+                <li>Programming Assignment: <span class="font-semibold">25%</span></li>
+            </ul>
+            <p class="mt-4">
+                Make sure to manage your time effectively and stay updated on all assignments and exam schedules. If you have any questions or need clarification, don’t hesitate to reach out!
+            </p>
+        </div> -->
+
+        <!-- Homework Section  -->
+        <div class="bg-yellow-600 text-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-xl font-bold">📚 Homework </h2>
+            <p class="mt-2">
+                Below is a list of upcoming homework assignments. Make sure to review the deadlines and guidelines for each one.
+                And make sure to check <u><a href ="https://classroom.google.com/c/NzI5NTc3MjQwMjY0?cjc=fqinlng">Google Classroom.</a></u> for updates.
+            </p>
+
+            <!-- Dummy Homework Table -->
+            <table class="min-w-full mt-4 table-auto text-sm text-gray-900">
+                <thead>
+                    <tr class="bg-gray-800 text-white">
+                        <th class="px-4 py-2">Assignment</th>
+                        <th class="px-4 py-2">Start Date</th>
+                        <th class="px-4 py-2">Due Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-200 text-center">
+                        <td class="px-4 py-2">Homework #1 - SQL </td>
+                        <td class="px-4 py-2">Jan 7, 2025</td>
+                        <td class="px-4 py-2">Jan 13, 2025</td>
+                    </tr>
+                    <tr class="bg-white text-center">
+                        <td class="px-4 py-2">Homework #2 - SQL (Sub)Queries and Set Operation</td>
+                        <td class="px-4 py-2">Jan 28, 2025</td>
+                        <td class="px-4 py-2">Feb 3, 2025</td>
+                    </tr>
+                    <tr class="bg-gray-200 text-center">
+                        <td class="px-4 py-2">Homework #3 - Show me the website 2025 </td>
+                        <td class="px-4 py-2">Feb 4, 2025</td>
+                        <td class="px-4 py-2">Feb 10, 2025</td>
+                    </tr>
+                    <tr class="bg-white text-center">
+                        <td class="px-4 py-2">Homework #4 - TBA</td>
+                        <td class="px-4 py-2">TBA</td>
+                        <td class="px-4 py-2">TBA</td>
+                    </tr>
+                    <tr class="bg-white text-center">
+                        <td class="px-4 py-2">Homework #5 - TBA</td>
+                        <td class="px-4 py-2">TBA</td>
+                        <td class="px-4 py-2">TBA</td>
+                    </tr>
+                    <tr class="bg-white text-center">
+                        <td class="px-4 py-2">Homework #6 - Prepare for Final Exam</td>
+                        <td class="px-4 py-2">Mar 4, 2025</td>
+                        <td class="px-4 py-2">Mar 11, 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Programming Assignment Section  -->
+        <div class="bg-green-600 text-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-xl font-bold">💻 Programming Assignment</h2>
+            <p class="mt-2">
+                Below is a list of upcoming programming assignments. Review the requirements carefully and ensure timely submission.
+                And make sure to check <u><a href ="https://classroom.google.com/c/NzI5NTc3MjQwMjY0?cjc=fqinlng">Google Classroom.</a></u> for updates.
+            </p>
+
+            <!-- Dummy Programming Assignment Table -->
+            <table class="min-w-full mt-4 table-auto text-sm text-gray-900">
+                <thead>
+                    <tr class="bg-gray-800 text-white">
+                        <th class="px-4 py-2">Assignment</th>
+                        <th class="px-4 py-2">Due Date</th>
+                        <th class="px-4 py-2">Start Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray-200 text-center">
+                        <td class="px-4 py-2">Part 0 - Python Primer for Data Processing
+                            </td>
+                        <td class="px-4 py-2">Nov 26, 2024</td>
+                        <td class="px-4 py-2">Dec 4,2024</td>
+                    </tr>
+                    <tr class="bg-white text-center">
+                        <td class="px-4 py-2">Part 1 - Storage Manager</td>
+                        <td class="px-4 py-2">Dec 11, 2024</td>
+                        <td class="px-4 py-2">Jan 2, 2025</td>
+                    </tr>
+                    <tr class="bg-gray-200 text-center">
+                        <td class="px-4 py-2">Part 2 - Database Indexes</td>
+                        <td class="px-4 py-2">Jan 7, 2025</td>
+                        <td class="px-4 py-2">Jan 29,2024</td>
+                    </tr>
+                    <tr class="bg-white text-center">
+                        <td class="px-4 py-2">Part 3 - Query Execution</td>
+                        <td class="px-4 py-2">Feb 4, 2025</td>
+                        <td class="px-4 py-2">Mar 5, 2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-10">
+        <p>Database Programming in Practice | &copy; 2024</p>
+    </footer>
+
+</body>
+</html>

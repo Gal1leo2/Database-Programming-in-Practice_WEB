@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule | Database Programming in Practice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1d98392fe1.js" crossorigin="anonymous"></script>
+
+    <style>
+      body {
+        font-family: "Noto Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-gray-900 to-gray-700 text-gray-100 min-h-screen flex flex-col ">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar fixed top-0 z-50 w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between px-6 py-3">
+          <!-- Logo or Brand -->
+          <a href="/index.html" class="text-xl font-bold text-white tracking-wide hover:text-red-500 transition duration-300">
+            05696110
+          </a>
+          
+          <!-- Mobile Menu Button -->
+          <button class="block md:hidden p-2 text-white hover:text-red-500 transition duration-300">
+            <i class="fas fa-bars"></i>
+          </button>
+    
+          <!-- Navigation Links -->
+          <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="/assignment.html" class="text-gray-200 hover:text-red-500 transition duration-300">Assignments</a>
+            <a href="/schedule.html" class="text-gray-200 hover:text-red-500 transition duration-300">Schedule</a>
+            <a href="/courselogistics.html" class="text-gray-200 hover:text-red-500 transition duration-300">Syllabus & Course Logistics</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow mt-20 px-4 py-8 bg-white text-gray-900 rounded-lg shadow-lg container mx-auto">
+      <!-- Schedule Header -->
+      <h1 class="text-3xl font-bold text-gray-800  mb-6">
+        <i class="mr-4 fa-regular fa-calendar-days"></i><span>Schedule</span>
+        <span class="text-gray-500 text-sm">Last Updated: Nov 2, 2024</span>
+      </h1>
+
+      <!-- Schedule Table -->
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full text-left bg-white border-collapse border border-gray-200">
+          <thead>
+            <tr class="bg-gray-100 text-gray-700">
+              <th class="px-4 py-2 border border-gray-200">Date</th>
+              <th class="px-4 py-2 border border-gray-200">Topic</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example row -->
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Nov 26, 2024</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 0: Course Introduction</td>
+              
+            </tr>
+            <!-- Additional rows can be added in the same format -->
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Nov 27, 2024</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 1: Data Model</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Dec 3, 2024</td>
+              <td class="px-4 py-2 border border-gray-200">Lab 1: SQL Bootcamp 1 - Retrieving, Restricting, Sorting Data</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Dec 4, 2024</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 2: Query Language</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="px-4 py-2 border border-gray-200">Dec 10, 2024</td>
+              <td class="px-4 py-2 border border-gray-200" colspan="4">Constitution Day</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Dec 11, 2024</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 3: Database Storage</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Dec 17, 2024</td>
+              <td class="px-4 py-2 border border-gray-200">Lab 2: SQL Bootcamp 2 - Single-Row, Conversion Functions and
+                Conditional Expressions</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Dec 18, 2024</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 4: Memory Management</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="px-4 py-2 border border-gray-200">Dec 24, 2024</td>
+              <td class="px-4 py-2 border border-gray-200" colspan="4">Christmas Week</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="px-4 py-2 border border-gray-200">Dec 25, 2024</td>
+              <td class="px-4 py-2 border border-gray-200" colspan="4">Christmas Day</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="px-4 py-2 border border-gray-200">Dec 31, 2024</td>
+              <td class="px-4 py-2 border border-gray-200" colspan="4">New Year Week</td>
+            </tr>
+            <tr class="bg-blue-100">
+              <td class="px-4 py-2 border border-gray-200">Jan 1, 2025</td>
+              <td class="px-4 py-2 border border-gray-200" colspan="4">New Year's Day</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Jan 7, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lab 3: SQL Bootcamp 3 - Aggregation and Group Functions</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Jan 8, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 5: Database Index</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Jan 14, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lab 4: SQL Bootcamp 4 - Displaying Data from Multiple Tables</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Jan 15, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 6: Query Operator</td>
+            </tr>
+            <tr class="bg-red-100 text-red-800 font-bold">
+              <td class="px-4 py-2 border border-gray-200">TBA</td>
+              <td class="px-4 py-2 border border-gray-200" colspan="4">Midterm Exam (20%)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Jan 28, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lab 5: SQL Bootcamp 5 - Subqueries and Set Operation</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Jan 29, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Python Database Connectivity (Online)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Feb 4, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lab 6: SQL Bootcamp 6 - Managing Tables / Views / Indexes</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Feb 5, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 7: Query Execution and Optimization</td>
+            </tr>
+            <tr class="bg-red-100 text-red-800 font-bold">
+              <td class="px-4 py-2 border border-gray-200">Feb 11,2025</td>
+              <td class="px-4 py-2 border border-gray-200" colspan="4">SQL Exam (10%)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Feb 12, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 8: Database Consistency and Isolation (Transaction Management)</td>
+            </tr>
+            <tr>
+              <td class="bg-orange-100 text-orange-800 px-4 py-2 border border-gray-200">Feb 18, 2025</td>
+              <td class=" bg-orange-100 text-orange-800 px-4 py-2 border border-gray-200">Project Pitching</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Feb 19, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 9: Database Atomicity and Durability (Recovery Control)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Feb 25, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lab 9: Database Design using ER Diagram (1)</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Feb 26, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 10	Introduction to Spatial Databases </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Mar 4, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lecture 11: Introduction to Big Data and Their Applications (Guest Lecture) </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Mar 5, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">Lab 10:	Database Design using ER Diagram (2) </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border border-gray-200">Mar 11, 2025</td>
+              <td class="px-4 py-2 border border-gray-200">NO CLASS ! </td>
+            </tr>
+            <tr>
+              <td class=" bg-orange-100 text-orange-800 px-4 py-2 border border-gray-200">Mar 12, 2025</td>
+              <td class=" bg-orange-100 text-orange-800 px-4 py-2 border border-gray-200">Project Presentation (15%)	 </td>
+            </tr>
+            <tr class="bg-red-100 text-red-800 font-bold">
+              <td class="px-4 py-2 border border-gray-200">TBA</td>
+              <td class="px-4 py-2 border border-gray-200" colspan="4">Final Exam (20%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center text-sm">
+        <p>&copy; 2024 Database Programming in Practice. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
