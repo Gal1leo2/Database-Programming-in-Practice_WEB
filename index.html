@@ -1,221 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts Noto Sans -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Tailwind CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/1d98392fe1.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Google Fonts Noto Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
 
-    <title>Database Programming in Practice</title>
-    <style>
-      body {
-        font-family: "Noto Sans", sans-serif;
-      }
-    </style>
-  </head>
-  <body
-    class="font-sans bg-gradient-to-b from-gray-800 to-gray-900 text-gray-200"
-  >
-    <!-- Header -->
-    <header>
-      <nav
-        class="navbar fixed top-0 z-50 w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 shadow-lg"
-      >
-        <div
-          class="container mx-auto flex items-center justify-between px-6 py-3"
-        >
-          <a
-            href="https://pnx.guide/course/2023/05696110/index.html"
-            class="text-xl font-bold text-white tracking-wide hover:text-red-500 transition duration-300"
-          >
-            05696110
-          </a>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/1d98392fe1.js" crossorigin="anonymous"></script>
 
-          <button
-            class="block md:hidden p-2 text-white hover:text-red-500 transition duration-300"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+  <title>Database Programming in Practice</title>
+  <style>
+    body {
+      font-family: "Noto Sans", sans-serif;
+    }
+  </style>
+</head>
 
-          <div class="hidden md:flex space-x-8 text-sm font-medium">
-            <a
-              href="https://pnx.guide/course/2024/05696110/assignment.html"
-              class="text-gray-200 hover:text-red-500 transition duration-300"
-              >Assignments</a
-            >
-            <a
-              href="https://pnx.guide/course/2024/05696110/schedule.html"
-              class="text-gray-200 hover:text-red-500 transition duration-300"
-              >Schedule</a
-            >
-            <a
-              href="https://drive.google.com/drive/folders/1lFEQqrV1elo5HoOXqvJDh0xOoGSpc5JV?usp=drive_link"
-              class="text-gray-200 hover:text-red-500 transition duration-300"
-              >Class Meterials</a
-            >
-            <a
-              href="https://pnx.guide/course/2024/05696110/courselogistics.html"
-              class="text-gray-200 hover:text-red-500 transition duration-300"
-              >Syllabus & Course Logistics</a
-            >
-          </div>
+<body class="bg-gradient-to-b from-gray-900 to-gray-700 text-gray-100 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header>
+    <nav class="navbar fixed top-0 z-50 w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 shadow-lg">
+      <div class="container mx-auto flex items-center justify-between px-6 py-3">
+        <a href="https://pnx.guide/course/2024/05696110/index.html"
+          class="text-xl font-bold text-white tracking-wide hover:text-red-500 transition duration-300">
+          05696110
+        </a>
+
+        <button class="block md:hidden p-2 text-white hover:text-red-500 transition duration-300">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="https://pnx.guide/course/2024/05696110/assignment.html"
+            class="text-gray-200 hover:text-red-500 transition duration-300">Assignment</a>
+          <a href="https://pnx.guide/course/2024/05696110/schedule.html"
+            class="text-gray-200 hover:text-red-500 transition duration-300">Schedule</a>
+          <a href="https://drive.google.com/drive/folders/1lFEQqrV1elo5HoOXqvJDh0xOoGSpc5JV?usp=drive_link"
+            class="text-gray-200 hover:text-red-500 transition duration-300">Class Material</a>
+          <a href="https://pnx.guide/course/2024/05696110/courselogistics.html"
+            class="text-gray-200 hover:text-red-500 transition duration-300">Syllabus</a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Banner -->
-    <section
-      class="banner h-screen relative overflow-hidden border-b-8 border-orange-700"
-    >
-      <div
-        class="bg-cover bg-center bg-no-repeat bg-fixed w-full h-full"
-        style="
+  <!-- Banner -->
+  <section class="banner h-screen relative overflow-hidden border-b-8 border-orange-700">
+    <div class="bg-cover bg-center bg-no-repeat bg-fixed w-full h-full" style="
           background-image: url('https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/pnxguide_A_cartoon_having_a_hero_holding_SQL_fighting_a_relatio_bb842a3f-c779-46af-865a-bf31cb462cb2.png?alt=media&token=c6f73434-b4ed-43ce-aabf-675599b5ccc2');
-        "
-      >
-        <div
-          class="container mx-auto px-4 text-white h-full flex flex-col justify-center items-start"
-        >
-          <h1 class="text-7xl font-bold">Database Programming in Practice</h1>
-          <hr class="my-2 border-red-600 w-80" />
-          <h2 class="text-3xl">05696110 - Semester 2, 2024</h2>
+        ">
+      <div class="container mx-auto px-4 text-white h-full flex flex-col justify-center items-start">
+        <h1 class="text-6xl font-bold">Database Programming in Practice</h1>
+        <hr class="my-2 border-red-600 w-80" />
+        <h2 class="text-2xl">05696110 - Semester 2, 2024</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="flex-grow mt-20 px-4 py-8 bg-white text-gray-900 rounded-lg shadow-lg container mx-auto">
+    <!-- Course Description -->
+    <section>
+      <h2 class="text-2xl font-bold mb-2">
+        <i class="fas fa-info-circle"></i> Course Description
+      </h2>
+      <p>
+        This course emphasizes database concepts, developments, use and
+        management in three main sections: database concepts, practice, and
+        emerging trends. Other topics include: the Data Definition Language,
+        the Data Manipulation Language, database design, practical
+        design of databases and developing database applications using modern
+        software tools will be emphasized.
+      </p>
+      <dl class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div>
+          <dt class="font-semibold"><i class="fa fa-clock"></i> Lecture:</dt>
+          <dd>Wednesday 10:00 - 12:00</dd>
         </div>
+        <div>
+          <dt class="font-semibold"><i class="fas fa-flask"></i> Lab:</dt>
+          <dd>Tuesday 17:00 - 19:00</dd>
+        </div>
+        <div>
+          <dt class="font-semibold">
+            <i class="fa fa-building"></i> Location:
+          </dt>
+          <dd>Building Sc08 Room 102</dd>
+        </div>
+        <div>
+          <dt class="font-semibold">
+            <i class="fa fa-comments"></i> Discussion:
+          </dt>
+          <dd>
+            <a href="https://discord.gg/q6NsqwEf" class="text-red-600 hover:underline">Discord</a>
+          </dd>
+          <dd>
+            <a href="https://classroom.google.com/c/NzI5NTc3MjQwMjY0?cjc=fqinlng"
+              class="text-red-600 hover:underline">Google Classroom</a>
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Course Calendar -->
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold mb-4">
+        <i class="fa fa-calendar"></i> Course Calendar
+      </h2>
+      <iframe
+        src="https://calendar.google.com/calendar/embed?src=b599654d59ed1a5fcfade31e88447d5688fa7e75f9f0315bd575791b567228fb%40group.calendar.google.com&ctz=Asia%2FBangkok"
+        class="w-full h-96 border rounded-md" frameborder="0" scrolling="no"></iframe>
+    </section>
+
+    <!-- Instructors -->
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold mb-4">
+        <i class="fa fa-graduation-cap"></i> Instructor
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-200 rounded-md">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2">Photo</th>
+              <th class="px-4 py-2">Name</th>
+              <th class="px-4 py-2">Office Hours</th>
+              <th class="px-4 py-2">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center">
+              <td class="px-4 py-2">
+                <a href="https://pnx.guide/" title="Guide">
+                  <div class="h-40 w-40 flex justify-center items-center overflow-hidden mx-auto">
+                    <img src="https://pnx.guide/profile.jpg" class="object-cover w-full h-full rounded-full"
+                      alt="P'Guide" />
+                  </div>
+                </a>
+              </td>
+              <td class="px-4 py-2 font-medium">
+                Yuttapichai "Guide" Kerdcharoen
+              </td>
+              <td class="px-4 py-2">TBA</td>
+              <td class="px-4 py-2">Online</td>
+            </tr>
+          </tbody>
+
+        </table>
       </div>
     </section>
 
-    <!-- Main Content -->
-    <main
-      class="flex-grow mt-20 px-4 py-8 bg-white text-gray-900 rounded-lg shadow-lg container mx-auto"
-    >
-      <!-- Course Description -->
-      <section>
-        <h2 class="text-2xl font-bold mb-2">
-          <i class="fas fa-info-circle"></i> Course Description
-        </h2>
-        <p>
-          This course emphasizes database concepts, developments, use and
-          management in three main sections: database concepts, practice, and
-          emerging trends. Other topics include: the Data Definition Language,
-          the Data Manipulation Language, database design, practical
-          design of databases and developing database applications using modern
-          software tools will be emphasized.
-        </p>
-        <dl class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <div>
-            <dt class="font-semibold"><i class="fa fa-clock"></i> Lecture:</dt>
-            <dd>Wednesday 10.00am - 12.00pm</dd>
-          </div>
-          <div>
-            <dt class="font-semibold"><i class="fas fa-flask"></i> Labs:</dt>
-            <dd>Thursday 16.30pm - 18.30pm</dd>
-          </div>
-          <div>
-            <dt class="font-semibold">
-              <i class="fa fa-building"></i> Location:
-            </dt>
-            <dd>Building Sc08 Room 102</dd>
-          </div>
-          <div>
-            <dt class="font-semibold">
-              <i class="fa fa-comments"></i> Discussion:
-            </dt>
-            <dd>
-              <a
-                href="https://discord.gg/q6NsqwEf"
-                class="text-red-600 hover:underline"
-                >Discord</a
-              >
-            </dd>
-            <dd>
-              <a
-                href="https://classroom.google.com/c/NzI5NTc3MjQwMjY0?cjc=fqinlng"
-                class="text-red-600 hover:underline"
-                >Google Classroom</a
-              >
-            </dd>
-          </div>
-        </dl>
-      </section>
-
-      <!-- Course Calendar -->
-      <section class="mt-10">
-        <h2 class="text-2xl font-bold mb-4">
-          <i class="fa fa-calendar"></i> Course Calendar
-        </h2>
-        <iframe
-          src="https://calendar.google.com/calendar/embed?src=b599654d59ed1a5fcfade31e88447d5688fa7e75f9f0315bd575791b567228fb%40group.calendar.google.com&ctz=Asia%2FBangkok"
-          class="w-full h-96 border rounded-md"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </section>
-
-      <!-- Instructors -->
-      <section class="mt-10">
-        <h2 class="text-2xl font-bold mb-4">
-          <i class="fa fa-graduation-cap"></i> Instructor
-        </h2>
-        <div class="overflow-x-auto">
-          <table class="min-w-full bg-white border border-gray-200 rounded-md">
-            <thead>
-              <tr class="bg-gray-200">
-                <th class="px-4 py-2">Photo</th>
-                <th class="px-4 py-2">Name</th>
-                <th class="px-4 py-2">Office Hours</th>
-                <th class="px-4 py-2">Location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="text-center">
-                <td class="px-4 py-2">
-                  <a href="https://pnx.guide/" title="Guide">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/guide.png?alt=media&token=21fc2866-15be-411a-a6e5-deb3679e00a7"
-                      class="h-40 w-40 rounded-full mx-auto"
-                      alt="Guide"
-                    />
-                    <div class="h-40 w-40 flex justify-center items-center overflow-hidden mx-auto">
-                      <img
-                        src="https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/guide.png?alt=media&token=21fc2866-15be-411a-a6e5-deb3679e00a7"
-                        class="object-cover w-full h-full rounded-full"
-                        alt="P'Guide"
-                      />
-                    </div>
-                  </a>
-                </td>
-                <td class="px-4 py-2 font-medium">
-                  Yuttapichai "Guide" Kerdcharoen
-                </td>
-                <td class="px-4 py-2">Friday 4.30pm - 6.30pm</td>
-                <td class="px-4 py-2">Building Sc08 Room 107</td>
-              </tr>
-            </tbody>
-            
-          </table>
-        </div>
-      </section>
-
-      <!-- Teaching Assistants -->
-      <section class="mt-10">
-        <h2 class="text-2xl font-bold mb-4">
-          <i class="fa fa-users"></i> Teaching Assistants
-        </h2>
-        <div class="overflow-x-auto">
-          <table class="min-w-full bg-white border border-gray-200 rounded-md">
+    <!-- Teaching Assistants -->
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold mb-4">
+        <i class="fa fa-users"></i> Teaching Assistants
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-200 rounded-md">
           <table class="table-auto min-w-full bg-white border border-gray-200 rounded-md">
             <thead>
               <tr class="bg-gray-200">
@@ -228,74 +172,56 @@
             <tbody>
               <tr class="text-center">
                 <td class="px-4 py-2">
-                  <img
-                    src="https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/IMG_3475.jpg?alt=media&token=2802ebb3-43e7-4d13-aea6-e93dbe5f9b42"
-                    class="h-36 w-36 rounded-full mx-auto"
-                    alt="Assistant 1"
-                  />
                   <div class="h-36 w-36 flex justify-center items-center overflow-hidden mx-auto">
                     <img
                       src="https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/IMG_3475.jpg?alt=media&token=2802ebb3-43e7-4d13-aea6-e93dbe5f9b42"
-                      class="object-cover w-full h-full rounded-full"
-                      alt="Assistant 1 (1)"
-                    />
+                      class="object-cover w-full h-full rounded-full" alt="Assistant 1 (1)" />
                   </div>
                 </td>
-                <td class="px-4 py-2 font-medium">Malapchai Chaisihat</td>
+                <td class="px-4 py-2 font-medium">Malapchai "Nueng" Chaisihat</td>
                 <td class="px-4 py-2">TBA</td>
                 <td class="px-4 py-2">Online</td>
-                <td class="px-4 py-2">Building Sc08 Room 107</td>
               </tr>
               <!-- Repeat for other rows -->
               <tr class="text-center">
                 <td class="px-4 py-2">
-                  <a
-                    href="https://www.linkedin.com/in/phuvis-kerdpramote-7ab70a173/"
-                  >
-                  <div class="h-36 w-36 flex justify-center items-center overflow-hidden mx-auto">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/436221546_7521069704672764_21729104165972419_n.jpg?alt=media&token=35f714a3-09cc-43d0-82b1-6c386c659b38"
-                      class="h-36 w-36 rounded-full mx-auto"
-                      alt="Assistant 2"
-                      class="object-cover w-full h-full rounded-full"
-                      alt="Assistant 2 (Poom)"
-                    />
+                  <a href="https://www.linkedin.com/in/phuvis-kerdpramote-7ab70a173/">
+                    <div class="h-36 w-36 flex justify-center items-center overflow-hidden mx-auto">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/436221546_7521069704672764_21729104165972419_n.jpg?alt=media&token=35f714a3-09cc-43d0-82b1-6c386c659b38"
+                        class="h-36 w-36 rounded-full mx-auto" alt="Assistant 2"
+                        class="object-cover w-full h-full rounded-full" alt="Assistant 2 (Poom)" />
                   </a>
-                  </div>
-                </td>
-                <td class="px-4 py-2 font-medium">Phuvis Kerdpramote</td>
-                <td class="px-4 py-2">Thursday 16.00pm - 20.00pm</td>
-                <td class="px-4 py-2">Online</td>
-                <td class="px-4 py-2">Thursday 17.00pm - 19.00pm</td>
-                <td class="px-4 py-2">Building Sc08 Room 107  </td>
-              </tr>
-              <tr class="text-center">
-                <td class="px-4 py-2">
-                  <div class="h-36 w-36 flex justify-center items-center overflow-hidden mx-auto">
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/IMG_3231.jpg?alt=media&token=2a35e467-f2ef-45ec-a21b-192bc39d8dc7"
-                      class="h-36 w-36 rounded-full mx-auto"
-                      alt="Assistant 3"
-                      class="object-cover w-full h-full rounded-full"
-                      alt="Assistant 3 (Indy)"
-                    />
-                  </a>
-                  </div>
-                </td>
-                <td class="px-4 py-2 font-medium">Saksakun Jiarapong</td>
-                <td class="px-4 py-2">TBA</td>
-                <td class="px-4 py-2">Online</td>
-                <td class="px-4 py-2">Building Sc08 Room 107</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      
-    </main>
+      </div>
+      </td>
+      <td class="px-4 py-2 font-medium">Phuvis "Poom" Kerdpramote</td>
+      <td class="px-4 py-2">Thursday 16:00 - 20:00</td>
+      <td class="px-4 py-2">Online</td>
+      </tr>
+      <tr class="text-center">
+        <td class="px-4 py-2">
+          <div class="h-36 w-36 flex justify-center items-center overflow-hidden mx-auto">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/cseventstorage.appspot.com/o/IMG_3231.jpg?alt=media&token=2a35e467-f2ef-45ec-a21b-192bc39d8dc7"
+              class="object-cover h-36 w-36 rounded-full mx-auto" alt="Assistant 3"
+              class="object-cover w-full h-full rounded-full" alt="Assistant 3 (Indy)" />
+            </a>
+          </div>
+        </td>
+        <td class="px-4 py-2 font-medium">Saksakun "Indy" Jiarapong</td>
+        <td class="px-4 py-2">TBA</td>
+        <td class="px-4 py-2">Online</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+    </section>
 
-    <footer class="text-center py-4 bg-gray-900 text-gray-400 mt-10">
-      <p>© 2024 Database Programming in Practice. All rights reserved.</p>
-    </footer>
-  </body>
+  </main>
+
+  <footer class="text-center py-4 bg-gray-900 text-gray-400 mt-10">
+    <p>© 2024 Database Programming in Practice. All rights reserved.</p>
+  </footer>
+</body>
+
 </html>

@@ -1,312 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Course Logistics and Criteria" />
-    <title>Course Logistics | Database Programming in Practice</title>
 
-    <script
-      src="https://kit.fontawesome.com/1d98392fe1.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
-    <style>
-      body {
-        font-family: "Noto Sans", sans-serif;
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Course Logistics and Criteria" />
+  <title>Course Logistics | Database Programming in Practice</title>
 
-  <body
-    class="bg-gradient-to-b from-gray-900 to-gray-700 text-gray-100 min-h-screen flex flex-col"
-  >
+  <script src="https://kit.fontawesome.com/1d98392fe1.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Noto Sans", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-gray-900 to-gray-700 text-gray-100 min-h-screen flex flex-col">
+  <!-- Header -->
   <header>
-    <nav
-      class="navbar fixed top-0 z-50 w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 shadow-lg"
-    >
-      <div
-        class="container mx-auto flex items-center justify-between px-6 py-3"
-      >
-        <a
-          href="https://pnx.guide/course/2023/05696110/index.html"
-          class="text-xl font-bold text-white tracking-wide hover:text-red-500 transition duration-300"
-        >
+    <nav class="navbar fixed top-0 z-50 w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 shadow-lg">
+      <div class="container mx-auto flex items-center justify-between px-6 py-3">
+        <a href="https://pnx.guide/course/2024/05696110/index.html"
+          class="text-xl font-bold text-white tracking-wide hover:text-red-500 transition duration-300">
           05696110
         </a>
 
-        <button
-          class="block md:hidden p-2 text-white hover:text-red-500 transition duration-300"
-        >
+        <button class="block md:hidden p-2 text-white hover:text-red-500 transition duration-300">
           <i class="fas fa-bars"></i>
         </button>
 
         <div class="hidden md:flex space-x-8 text-sm font-medium">
-          <a
-            href="https://pnx.guide/course/2024/05696110/assignment.html"
-            class="text-gray-200 hover:text-red-500 transition duration-300"
-            >Assignments</a
-          >
-          <a
-            href="https://pnx.guide/course/2024/05696110/schedule.html"
-            class="text-gray-200 hover:text-red-500 transition duration-300"
-            >Schedule</a
-          >
-          <a
-            href="https://drive.google.com/drive/folders/1lFEQqrV1elo5HoOXqvJDh0xOoGSpc5JV?usp=drive_link"
-            class="text-gray-200 hover:text-red-500 transition duration-300"
-            >Class Meterials</a
-          >
-          <a
-            href="https://pnx.guide/course/2024/05696110/courselogistics.html"
-            class="text-gray-200 hover:text-red-500 transition duration-300"
-            >Syllabus & Course Logistics</a
-          >
+          <a href="https://pnx.guide/course/2024/05696110/assignment.html"
+            class="text-gray-200 hover:text-red-500 transition duration-300">Assignment</a>
+          <a href="https://pnx.guide/course/2024/05696110/schedule.html"
+            class="text-gray-200 hover:text-red-500 transition duration-300">Schedule</a>
+          <a href="https://drive.google.com/drive/folders/1lFEQqrV1elo5HoOXqvJDh0xOoGSpc5JV?usp=drive_link"
+            class="text-gray-200 hover:text-red-500 transition duration-300">Class Material</a>
+          <a href="https://pnx.guide/course/2024/05696110/courselogistics.html"
+            class="text-gray-200 hover:text-red-500 transition duration-300">Syllabus</a>
         </div>
       </div>
     </nav>
   </header>
 
-    <main
-      class="flex-grow mt-20 px-4 py-8 bg-white text-gray-900 rounded-lg shadow-lg container mx-auto"
-    >
-      <h1 class="text-4xl font-bold mb-6 flex items-center">
-        <i class="fas fa-info-circle mr-3"></i> Course Logistics
-      </h1>
-      <p class="text-gray-600 text-sm mb-8">
-        Last Updated: <time datetime="2024-10-28">Nov 25, 2024</time>
+  <main class="flex-grow mt-20 px-4 py-8 bg-white text-gray-900 rounded-lg shadow-lg container mx-auto">
+    <h1 class="text-4xl font-bold mb-6 flex items-center">
+      <i class="fas fa-info-circle mr-3"></i> Course Logistics
+    </h1>
+    <p class="text-gray-600 text-sm mb-8">
+      Last Updated: <time datetime="2024-10-28">Nov 25, 2024</time>
+    </p>
+
+    <div class="bg-blue-600 text-white p-6 rounded-lg shadow-lg mb-6">
+      <h2 class="text-2xl font-bold">📘 Course Overview</h2>
+      <p class="mt-2">
+        This course introduces fundamental concepts of database programming
+        with hands-on practice. Students will gain practical experience in
+        SQL, database design, and implementation techniques.
+      </p>
+    </div>
+
+    <!-- Course Logistics  -->
+    <div class="p-6 rounded-lg shadow-lg mb-6">
+      <h2 class="text-2xl font-bold">📋 Grading Scheme</h2>
+      <p class="mt-2">
+        This course utilizes gamification to determine your grade, emphasizing
+        performance across various tracks. This class evaluates your
+        performance in 4 key skill sets:
+      </p>
+      <ul class="mt-4 space-y-2 list-disc list-inside">
+        <li>Theory</li>
+        <li>SQL</li>
+        <li>System Programming</li>
+        <li>Database Design</li>
+      </ul>
+      <p class="mt-4">Grade thresholds are as follows:</p>
+      <table class="min-w-full mt-4 table-auto text-sm text-gray-900 bg-white rounded-lg">
+        <thead>
+          <tr class="bg-gray-800 text-white">
+            <th class="px-4 py-2">Grade</th>
+            <th class="px-4 py-2">Criteria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-gray-200 text-center">
+            <td class="px-4 py-2">A</td>
+            <td class="px-4 py-2">4 out of 4 tracks must be at Master</td>
+          </tr>
+          <tr class="bg-white text-center">
+            <td class="px-4 py-2">B+</td>
+            <td class="px-4 py-2">
+              At C, 3 out of 4 tracks must be at Master
+            </td>
+          </tr>
+          <tr class="bg-gray-200 text-center">
+            <td class="px-4 py-2">B</td>
+            <td class="px-4 py-2">
+              At C, 2 out of 4 tracks must be at Master
+            </td>
+          </tr>
+          <tr class="bg-white text-center">
+            <td class="px-4 py-2">C+</td>
+            <td class="px-4 py-2">
+              At C, 1 out of 4 tracks must be at Master
+            </td>
+          </tr>
+          <tr class="bg-gray-200 text-center">
+            <td class="px-4 py-2">C</td>
+            <td class="px-4 py-2">4 out of 4 tracks must be at Baseline</td>
+          </tr>
+          <tr class="bg-white text-center">
+            <td class="px-4 py-2">D+</td>
+            <td class="px-4 py-2">3 out of 4 tracks must be at Baseline</td>
+          </tr>
+          <tr class="bg-gray-200 text-center">
+            <td class="px-4 py-2">D</td>
+            <td class="px-4 py-2">2 out of 4 tracks must be at Baseline</td>
+          </tr>
+        </tbody>
+        <p></p>
+      </table>
+
+      <br>
+      <p>Each skill set will be evaluated using the following levels:</p>
+      <ul class="mt-4 space-y-2 list-disc list-inside">
+        <li>Master: Achieve a score greater than 90%</li>
+        <li>Baseline: Achieve a score between 50% and 90%</li>
+        <li>Below Baseline: Achieve a score less than 50%</li>
+      </ul>
+    </div>
+
+    <div class="p-6 rounded-lg shadow-lg mb-6">
+      <h2 class="text-2xl font-bold">📊 Exam</h2>
+      <p class="mt-2">
+        There will be three exams during the course. These exams will assess
+        the mandatory readings and topics covered in class. The first exam
+        will be a midterm, the second will be a final exam, and the third will
+        focus specifically on SQL.
+      </p>
+      <p>
+        <b>
+          The exams are consider as one of the skill set, so make sure to do your best!
+        </b>
+      </p>
+    </div>
+    <div class="p-6 rounded-lg shadow-lg mb-6">
+      <h2 class="text-2xl font-bold">💻 SQL Exam</h2>
+      <p class="mt-2">
+        The third exam will focus on testing your knowledge and skills in SQL
+        (Structured Query Language). It will cover topics such as querying
+        databases, writing SELECT statements, using JOINs, GROUP BY, WHERE
+        clauses, and understanding database design principles. The exam will
+        include both theoretical questions and practical exercises, where you
+        will need to write SQL queries to solve problems.
+      </p>
+      <p>
+        <b>The SQL exam is consider as one of the skill set (SQL), so make
+          sure to do your best!
+        </b>
+      </p>
+    </div>
+    <div class="p-6 rounded-lg shadow-lg mb-6">
+      <h2 class="text-2xl font-bold">😇 Grace Day</h2>
+      <p class="mt-2">
+        <b>Assignments submitted is not eligible for a grace day,you need to
+          do in class and submit in day.</b>
+        However, if homework is submitted after the due date, you can use a
+        grace day to extend the submission time. If you do not use a grace day
+        and submit the homework late, 50% of the score for that assignment
+        will be deducted for each day it is late. Submissions will not be
+        accepted beyond the grace period.
+      </p>
+    </div>
+
+    <div class="p-6 rounded-lg shadow-lg mb-6">
+      <h2 class="text-2xl font-bold">❤️ Mental Health and Wellness</h2>
+      <p class="mt-2">
+        We are aware that this course is hard and could make you feel unwell.
+        Please remember that you are not alone. You can always reach out to us
+        if anything happens. This also includes a scenario, for example, you
+        cannot submit an assignment on time. We can always extend the deadline
+        if necessary. Remember, come and talk with us!
+      </p>
+    </div>
+
+    <div class="p-6 rounded-lg shadow-lg mb-6">
+      <h2 class="text-4xl font-bold">
+        🎓 Academic Integrity (Adapted from CMU)
+      </h2>
+      <p class="mt-2">
+        We will not tolerate any cheating or plagiarism or unauthorized
+        assistance cases. At least "F" will be given to the one committing one
+        of the above cases.
       </p>
 
-      <div class="bg-blue-600 text-white p-6 rounded-lg shadow-lg mb-6">
-        <h2 class="text-2xl font-bold">📘 Course Overview</h2>
-        <p class="mt-2">
-          This course introduces fundamental concepts of database programming
-          with hands-on practice. Students will gain practical experience in
-          SQL, database design, and implementation techniques.
-        </p>
-      </div>
+      <p class="mt-2">
+        Cheating occurs when a student avails her/himself of an unfair or
+        disallowed advantage which includes but is not limited to:
+      </p>
+      <li>
+        Theft of or unauthorized access to an exam, answer key or other graded
+        work from previous course offerings.
+      </li>
+      <li>Use of an alternate, stand-in or proxy during an examination.</li>
+      <li>
+        Copying from the examination or work of another person or source.
+      </li>
+      <li>Submission or use of falsified data.</li>
+      <li>
+        Using false statements to obtain additional time or other
+        accommodation.
+      </li>
+      <li>Falsification of academic credentials.</li>
+      <p class="mt-2">
+        Plagiarism is defined as the use of work or concepts contributed by
+        other individuals without proper attribution or citation. Unique ideas
+        or materials taken from another source for either written or oral use
+        must be fully acknowledged in academic work to be graded. Examples of
+        sources expected to be referenced include but are not limited to:
+      </p>
+      <li>Text, either written or spoken, quoted directly or paraphrased.</li>
+      <li>Graphic elements.</li>
+      <li>Passages of music, existing either as sound or as notation.</li>
+      <li>Mathematical proofs.</li>
+      <li>Scientific data.</li>
+      <li>
+        Concepts or material derived from the work, published or unpublished,
+        of another person.
+      </li>
+      <p class="mt-2">
+        Unauthorized assistance refers to the use of sources of support that
+        have not been specifically authorized in this policy statement or by
+        the course instructor(s) in the completion of academic work to be
+        graded. Such sources of support may include but are not limited to
+        advice or help provided by another individual, published or
+        unpublished written sources, and electronic sources. Examples of
+        unauthorized assistance include but are not limited to:
+      </p>
 
-      <!-- Course Logistics  -->
-      <div class="p-6 rounded-lg shadow-lg mb-6">
-        <h2 class="text-2xl font-bold">📋 Grading Scheme</h2>
-        <p class="mt-2">
-          This course utilizes gamification to determine your grade, emphasizing
-          performance across various tracks. This class evaluates your
-          performance in 4 key skill sets:
-        </p>
-        <ul class="mt-4 space-y-2 list-disc list-inside">
-          <li>Database Concepts (Midterm / Final Exam)</li>
-          <li>SQL (SQL Exam)</li>
-          <li>System Programming (Programming Assignment)</li>
-          <li>Database Design (Project)</li>
-        </ul>
-        <p class="mt-4">Grade thresholds are as follows:</p>
-        <table
-          class="min-w-full mt-4 table-auto text-sm text-gray-900 bg-white rounded-lg"
-        >
-          <thead>
-            <tr class="bg-gray-800 text-white">
-              <th class="px-4 py-2">Grade</th>
-              <th class="px-4 py-2">Criteria</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="bg-gray-200 text-center">
-              <td class="px-4 py-2">A</td>
-              <td class="px-4 py-2">4 out of 4 tracks must be at Master</td>
-            </tr>
-            <tr class="bg-white text-center">
-              <td class="px-4 py-2">B+</td>
-              <td class="px-4 py-2">
-                At C, 3 out of 4 tracks must be at Master
-              </td>
-            </tr>
-            <tr class="bg-gray-200 text-center">
-              <td class="px-4 py-2">B</td>
-              <td class="px-4 py-2">
-                At C, 2 out of 4 tracks must be at Master
-              </td>
-            </tr>
-            <tr class="bg-white text-center">
-              <td class="px-4 py-2">C+</td>
-              <td class="px-4 py-2">
-                At C, 1 out of 4 tracks must be at Master
-              </td>
-            </tr>
-            <tr class="bg-gray-200 text-center">
-              <td class="px-4 py-2">C</td>
-              <td class="px-4 py-2">4 out of 4 tracks must be at Baseline</td>
-            </tr>
-            <tr class="bg-white text-center">
-              <td class="px-4 py-2">D+</td>
-              <td class="px-4 py-2">3 out of 4 tracks must be at Baseline</td>
-            </tr>
-            <tr class="bg-gray-200 text-center">
-              <td class="px-4 py-2">D</td>
-              <td class="px-4 py-2">2 out of 4 tracks must be at Baseline</td>
-            </tr>
-          </tbody>
-          <p></p>
-        </table>
+      <li>
+        Collaboration on any assignment beyond the standards authorized by
+        this policy statement and the course instructor(s).
+      </li>
+      <li>
+        Submission of work completed or edited in whole or in part by another
+        person.
+      </li>
+      <li>
+        Supplying or communicating unauthorized information or materials,
+        including graded work and answer keys from previous course offerings,
+        in any way to another student.
+      </li>
+      <li>
+        Use of unauthorized information or materials, including graded work
+        and answer keys from previous course offerings.
+      </li>
+      <li>Use of unauthorized devices.</li>
+      <li>
+        Submission for credit of previously completed graded work in a second
+        course without first obtaining permission from the instructor(s) of
+        the second course. In the case of concurrent courses, permission to
+        submit the same work for credit in two courses must be obtained from
+        the instructors of both courses.
+      </li>
+    </div>
+  </main>
 
-        <p>Each skill set will be evaluated using the following levels:</p>
+  <footer class="text-center py-4 bg-gray-900 text-gray-400 mt-10">
+    <p>© 2024 Database Programming in Practice. All rights reserved.</p>
+  </footer>
+</body>
 
-        <ul class="mt-4 space-y-2 list-disc list-inside">
-          <li>Master: Achieve a score greater than 90%</li>
-          <li>Baseline: Achieve a score between 50% and 90%</li>
-          <li>Below: Achieve a score less than 50%</li>
-        </ul>
-      </div>
-
-      <div class="p-6 rounded-lg shadow-lg mb-6">
-        <h2 class="text-2xl font-bold">📊 Exam</h2>
-        <p class="mt-2">
-          There will be three exams during the course. These exams will assess
-          the mandatory readings and topics covered in class. The first exam
-          will be a midterm, the second will be a final exam, and the third will
-          focus specifically on SQL.
-        </p>
-        <p>
-          <b
-            >The Exam are consider as one of the skill set (Database Concepts),
-            so make sure to do your best!
-          </b>
-        </p>
-      </div>
-      <div class="p-6 rounded-lg shadow-lg mb-6">
-        <h2 class="text-2xl font-bold">💻 SQL Exam</h2>
-        <p class="mt-2">
-          The third exam will focus on testing your knowledge and skills in SQL
-          (Structured Query Language). It will cover topics such as querying
-          databases, writing SELECT statements, using JOINs, GROUP BY, WHERE
-          clauses, and understanding database design principles. The exam will
-          include both theoretical questions and practical exercises, where you
-          will need to write SQL queries to solve problems.
-        </p>
-        <p>
-          <b
-            >The SQL Exam are consider as one of the skill set (SQL), so make
-            sure to do your best!
-          </b>
-        </p>
-      </div>
-      <div class="p-6 rounded-lg shadow-lg mb-6">
-        <h2 class="text-2xl font-bold">😇 Grace Day</h2>
-        <p class="mt-2">
-          <b
-            >Assignments submitted is not eligible for a grace day,you need to
-            do in class and submit in day.</b
-          >
-          However, if homework is submitted after the due date, you can use a
-          grace day to extend the submission time. If you do not use a grace day
-          and submit the homework late, 50% of the score for that assignment
-          will be deducted for each day it is late. Submissions will not be
-          accepted beyond the grace period.
-        </p>
-      </div>
-
-      <div class="p-6 rounded-lg shadow-lg mb-6">
-        <h2 class="text-2xl font-bold">❤️ Mental Health and Wellness</h2>
-        <p class="mt-2">
-          We are aware that this course is hard and could make you feel unwell.
-          Please remember that you are not alone. You can always reach out to us
-          if anything happens. This also includes a scenario, for example, you
-          cannot submit an assignment on time. We can always extend the deadline
-          if necessary. Remember, come and talk with us!
-        </p>
-      </div>
-
-      <div class="p-6 rounded-lg shadow-lg mb-6">
-        <h2 class="text-4xl font-bold">
-          🎓 Academic Integrity (Adapted from CMU)
-        </h2>
-        <p class="mt-2">
-          We will not tolerate any cheating or plagiarism or unauthorized
-          assistance cases. At least "F" will be given to the one committing one
-          of the above cases.
-        </p>
-
-        <p class="mt-2">
-          Cheating occurs when a student avails her/himself of an unfair or
-          disallowed advantage which includes but is not limited to:
-        </p>
-        <li>
-          Theft of or unauthorized access to an exam, answer key or other graded
-          work from previous course offerings.
-        </li>
-        <li>Use of an alternate, stand-in or proxy during an examination.</li>
-        <li>
-          Copying from the examination or work of another person or source.
-        </li>
-        <li>Submission or use of falsified data.</li>
-        <li>
-          Using false statements to obtain additional time or other
-          accommodation.
-        </li>
-        <li>Falsification of academic credentials.</li>
-        <p class="mt-2">
-          Plagiarism is defined as the use of work or concepts contributed by
-          other individuals without proper attribution or citation. Unique ideas
-          or materials taken from another source for either written or oral use
-          must be fully acknowledged in academic work to be graded. Examples of
-          sources expected to be referenced include but are not limited to:
-        </p>
-        <li>Text, either written or spoken, quoted directly or paraphrased.</li>
-        <li>Graphic elements.</li>
-        <li>Passages of music, existing either as sound or as notation.</li>
-        <li>Mathematical proofs.</li>
-        <li>Scientific data.</li>
-        <li>
-          Concepts or material derived from the work, published or unpublished,
-          of another person.
-        </li>
-        <p class="mt-2">
-          Unauthorized assistance refers to the use of sources of support that
-          have not been specifically authorized in this policy statement or by
-          the course instructor(s) in the completion of academic work to be
-          graded. Such sources of support may include but are not limited to
-          advice or help provided by another individual, published or
-          unpublished written sources, and electronic sources. Examples of
-          unauthorized assistance include but are not limited to:
-        </p>
-
-        <li>
-          Collaboration on any assignment beyond the standards authorized by
-          this policy statement and the course instructor(s).
-        </li>
-        <li>
-          Submission of work completed or edited in whole or in part by another
-          person.
-        </li>
-        <li>
-          Supplying or communicating unauthorized information or materials,
-          including graded work and answer keys from previous course offerings,
-          in any way to another student.
-        </li>
-        <li>
-          Use of unauthorized information or materials, including graded work
-          and answer keys from previous course offerings.
-        </li>
-        <li>Use of unauthorized devices.</li>
-        <li>
-          Submission for credit of previously completed graded work in a second
-          course without first obtaining permission from the instructor(s) of
-          the second course. In the case of concurrent courses, permission to
-          submit the same work for credit in two courses must be obtained from
-          the instructors of both courses.
-        </li>
-      </div>
-    </main>
-
-    <footer class="text-center py-4 bg-gray-900 text-gray-400 mt-10">
-      <p>© 2024 Database Programming in Practice. All rights reserved.</p>
-    </footer>
-  </body>
 </html>
